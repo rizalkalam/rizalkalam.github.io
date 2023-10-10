@@ -1,16 +1,11 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Deploy') {
+    sstage('Deploy HTML File') {
             steps {
-                // Copy your application to the web server directory
-                sh 'rsync -avz --exclude=".env" . /var/www/html'
-                // Restart the web server (e.g., Nginx)
-                sh 'systemctl restart nginx'
+                // Use the 'sh' step to copy the 'index.html' file to the deployment location
+                sh 'cp index.html /path/to/deployment/directory/'
             }
         }
-
-        // Add more stages for building, testing, and deploying your project
     }
 }
