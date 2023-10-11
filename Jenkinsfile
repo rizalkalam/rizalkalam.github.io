@@ -12,7 +12,7 @@ pipeline{
             steps {
                 // Use the 'sh' step to copy the 'index.html' file to the deployment location
                 sh 'sudo cp index.html /var/www/html/'
-                sh 'sudo cp 13.png /var/www/html/images/'
+                sh 'sudo cp 13.png /home/rizalkalam/.jenkins/workspace/static-web-pipeline/img/'
             }
         }
     }
