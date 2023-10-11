@@ -12,6 +12,7 @@ pipeline{
             steps {
                 // Use the 'sh' step to copy the 'index.html' file to the deployment location
                 sh 'sudo cp index.html /var/www/html/'
+                sh 'sudo cp /img /var/www/html/images/'
             }
         }
     }
