@@ -15,7 +15,7 @@ pipeline{
                 // sh 'sudo cp style.css /var/www/html/'
                 sh 'sudo cp index.html /var/www/nugasyuk.my.id/html/'
                 sh 'sudo cp style.css /var/www/nugasyuk.my.id/html/'
-                sh 'sudo cp -r /home/rizalkalam/.jenkins/workspace/static-web-pipeline/img/* /var/www/html/images/'
+                sh 'sudo cp -r /home/rizalkalam/.jenkins/workspace/static-web-pipeline/img/* /var/www/nugasyuk.my.id/html/'
             }
         }
     }
